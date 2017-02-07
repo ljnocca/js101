@@ -20,7 +20,7 @@ var addOne = function(num) {
 var doubleNum = function(num) {
 	return num * 2
 }
-console.log("part1")
+console.log("***part1***")
 console.log(doubleNum(2))
 
 /**
@@ -33,7 +33,7 @@ console.log(doubleNum(2))
  function sum (num1, num2){
  	return num1 + num2
  }
-console.log("part2")
+console.log("***part2***")
 console.log(sum(2,3))
 
  // PART 2.5
@@ -47,7 +47,7 @@ function sum(num1, num2){
 	}
 	return num1 + num2
 }
-console.log("part2.5")
+console.log("***part2.5***")
 console.log(sum(5,"cherry"))
 
 // PART 3
@@ -59,7 +59,7 @@ console.log(sum(5,"cherry"))
 function average (num1, num2){
 	return (sum(num1, num2)/2)
 }
-console.log("part3")
+console.log("***part3***")
 console.log(average(10, 20))
 
 // Part 4
@@ -72,7 +72,7 @@ function isNegative(number){
 	}
 	return false
 }
-console.log("part4")
+console.log("***part4***")
 console.log(isNegative(-1))
 
 
@@ -109,7 +109,7 @@ function minimum(num1, num2, num3, num4){
     }
 }
 
-console.log("part5")
+console.log("***part5***")
 console.log(minimum(55,5,10,45))
 
 // Part 6
@@ -128,7 +128,7 @@ function justOneString(input1,input2){
 		return false
 }
 
-console.log("part6")
+console.log("***part6***")
 console.log(justOneString("word",10))
 
 
@@ -154,7 +154,7 @@ var helloWorld = function() {
 	console.log('hello world')
 }
 
-
+console.log("***part7***")
 doTwice(helloWorld) // should print 'hello world' to the console twice. 
 
 
@@ -178,6 +178,7 @@ conditionallyInvoke(helloWorld) // should do nothing
 
 var ORACLE = 'YES'
 
+console.log("***part8***")
 conditionallyInvoke(helloWorld) // should print hello world
 
 
@@ -188,8 +189,15 @@ conditionallyInvoke(helloWorld) // should print hello world
 // Part 9
 
 var factory = function() {
-
+	var hello="hello ";
+	function inside(world){
+		return hello + "world";
+	}
+	return inside
 }
+console.log("***part9***")
+factory()()
+
 
 
 // Part 10
